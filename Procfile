@@ -1,1 +1,1 @@
-web: gunicorn app:APIToCallModel
+web: gunicorn APIToCallModel:app
