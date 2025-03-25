@@ -1,0 +1,51 @@
+Internship_ID,Company,Sector,City,Applicants,Stipend,Duration_Months,Posting_Month,Remote
+1,TechSoft Solutions,Information Technology,Bangalore,12000,18000,3,January,Yes
+2,Innovatech,Information Technology,Hyderabad,9500,22000,6,February,No
+3,CyberDyne,Information Technology,Mumbai,15000,20000,3,March,Yes
+4,DataWave,Information Technology,Pune,8000,17000,4,April,No
+5,CodeLabs,Information Technology,Chennai,11000,19000,3,May,Yes
+6,FinanceGuru,Finance,Mumbai,13000,15000,2,January,No
+7,MoneyMasters,Finance,Delhi,7500,16000,3,February,Yes
+8,InvestPro,Finance,Bangalore,950,14000,2,March,No
+9,CapitalWise,Finance,Kolkata,10005,17000,3,April,Yes
+10,WealthEdge,Finance,Pune,8500,13000,2,May,No
+11,BrandBoost,Marketing,Delhi,14000,12000,3,June,Yes
+12,MarketMinds,Marketing,Mumbai,11000,10000,2,July,No
+13,AdVision,Marketing,Bangalore,9000,13000,3,August,Yes
+14,PromoPlus,Marketing,Hyderabad,1600,9000,4,September,No
+15,CreativeEdge,Marketing,Chennai,10000,11000,2,October,Yes
+16,EngiTech,Engineering,Chennai,7000,15000,3,November,No
+17,BuildRight,Engineering,Pune,6000,14000,2,December,Yes
+18,MechWorks,Engineering,Mumbai,8000,16000,3,January,No
+19,ConstructCo,Engineering,Bangalore,5500,17000,4,February,Yes
+20,InnovaEngineering,Engineering,Delhi,6500,15500,3,March,No
+21,MediCare,Healthcare,Hyderabad,9000,14000,3,April,Yes
+22,HealthPlus,Healthcare,Mumbai,10000,15000,2,May,No
+23,WellnessWorks,Healthcare,Chennai,8500,16000,3,June,Yes
+24,CarePath,Healthcare,Bangalore,7500,13000,2,July,No
+25,MediFuture,Healthcare,Pune,9500,14500,3,August,Yes
+26,ShopSmart,Retail,Delhi,11000,8000,2,September,No
+27,RetailRevolution,Retail,Mumbai,13000,9000,3,October,Yes
+28,MallMart,Retail,Kolkata,12000,8500,2,November,No
+29,TrendSetters,Retail,Bangalore,10000,9500,3,December,Yes
+30,BuyMore,Retail,Chennai,9000,8700,2,January,No
+31,HotelHub,Hospitality,Mumbai,14000,10000,3,February,No
+32,StayWell,Hospitality,Jaipur,12000,9500,2,March,Yes
+33,LuxuryLodge,Hospitality,Delhi,11000,11000,3,April,No
+34,ComfortInn,Hospitality,Chennai,13000,10500,3,May,Yes
+35,TravelTime,Hospitality,Hyderabad,10000,9800,2,June,No
+36,ShopOnline,E-commerce,Bangalore,16000,17000,3,July,Yes
+37,Ebuy,E-commerce,Mumbai,15000,16500,2,August,No
+38,ClickCart,E-commerce,Delhi,14000,17500,3,September,Yes
+39,DigitalMall,E-commerce,Chennai,15500,16000,2,October,No
+40,WebShoppers,E-commerce,Pune,14500,18000,3,November,Yes
+41,EduLearn,Education,Delhi,1000,9000,3,December,No
+42,BrightFuture,Education,Bangalore,8500,9500,2,January,Yes
+43,ScholarSpace,Education,Hyderabad,9500,9200,3,February,No
+44,StudyHub,Education,Chennai,11000,8800,2,March,Yes
+45,KnowledgeTree,Education,Mumbai,10005,9300,3,April,No
+46,MediaWave,Media,Mumbai,11500,8000,2,May,Yes
+47,NewsNow,Media,Delhi,12500,8500,3,June,No
+48,DigitalPress,Media,Bangalore,13000,9000,2,July,Yes
+49,BroadcastPro,Media,Hyderabad,12000,8700,3,August,No
+50,InfoMedia,Media,Chennai,11000,8200,2,September,Yes
