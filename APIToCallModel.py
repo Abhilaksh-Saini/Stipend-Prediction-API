@@ -1,10 +1,8 @@
 from flask import Flask, request, jsonify
 import joblib
 import pandas as pd
-from flask_cors import CORS
 
 app = Flask(__name__)
-CORS(app)
 # Load the trained model and encoders
 model = joblib.load("stipend_prediction_model.joblib")
 encoder_city = joblib.load("encoder_city.joblib")
