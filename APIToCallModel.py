@@ -4,7 +4,10 @@ import pandas as pd
 from flask_cors import CORS
 
 app = Flask(__name__)
-CORS(app)
+
+# Configure CORS properly
+CORS(app, resources={r"/*": {"origins": "*"}})
+
 # Load the trained model and encoders
 model = joblib.load("stipend_prediction_model.joblib")
 encoder_city = joblib.load("encoder_city.joblib")
@@ -26,9 +29,18 @@ def predict_stipend(city, sector, duration, remote):
     predicted_stipend = model.predict(input_data)[0]
     return round(predicted_stipend, 2)
 
-@app.route('/predict', methods=['POST', 'GET'])
+@app.route('/predict', methods=['POST', 'OPTIONS', 'GET'])
 def predict():
     try:
+        # Handle preflight requests
+        if request.method == "OPTIONS":
+            response = jsonify({"message": "CORS preflight request successful"})
+            response.headers.add("Access-Control-Allow-Origin", "*")
+            response.headers.add("Access-Control-Allow-Methods", "GET, POST, OPTIONS")
+            response.headers.add("Access-Control-Allow-Headers", "Content-Type, Authorization")
+            return response, 200
+
+        # Process the actual request
         if request.method == 'POST':
             data = request.get_json()
         elif request.method == 'GET':
@@ -42,10 +54,14 @@ def predict():
         # Get prediction
         stipend = predict_stipend(city, sector, duration, remote)
 
-        return jsonify({"Predicted Stipend": stipend})
+        response = jsonify({"Predicted Stipend": stipend})
+        response.headers.add("Access-Control-Allow-Origin", "*")  # Add CORS header to response
+        return response
     
     except Exception as e:
-        return jsonify({"error": str(e)}), 400
+        response = jsonify({"error": str(e)})
+        response.headers.add("Access-Control-Allow-Origin", "*")  # Add CORS header to error response
+        return response, 400
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=5000, debug=True)
